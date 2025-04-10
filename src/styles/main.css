@@ -1,5 +1,29 @@
+:root {
+    --primary-color: #232536;
+    --secondary-color: #6D6E76;
+    --accent-color: #592EA9;
+    --color-button-primary: #FFD050;
+    --btn-hover: #EDC14A;
+    --text-accent: #FBF6EA;
+    --primary-bg: #F4F4F4;
+    --bg-secondary: #F4F0F8;
+    --dark-gray: #4C4C4C;
+    --basic-white: #FFFFFF;
+    --bg-gradient: radial-gradient(80.99% 71.93% at 74.58% 0%, rgba(0, 0, 0, 0) 0%, #000 100%);
+
+    --main-font: 'Sen', sans-serif;
+    --primary-fz: 16px;
+}
+
 body {
-    font-family: 'Inter 18pt';
+    font-family: var(--main-font);
     font-weight: normal;
     font-style: normal;
+    font-size: var(--primary-fz);
+}
+
+.container {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 15px 0;
 }
