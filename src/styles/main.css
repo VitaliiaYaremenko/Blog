@@ -3,27 +3,134 @@
     --secondary-color: #6D6E76;
     --accent-color: #592EA9;
     --color-button-primary: #FFD050;
-    --btn-hover: #EDC14A;
+    --btn-hover-primary: #EDC14A;
+    --btn-hover-secondary: #d3d0d7;
     --text-accent: #FBF6EA;
     --primary-bg: #F4F4F4;
     --bg-secondary: #F4F0F8;
     --dark-gray: #4C4C4C;
-    --basic-white: #FFFFFF;
+    --basic-white: #ffffff;
     --bg-gradient: radial-gradient(80.99% 71.93% at 74.58% 0%, rgba(0, 0, 0, 0) 0%, #000 100%);
 
     --main-font: 'Sen', sans-serif;
-    --primary-fz: 16px;
+
+    --fomt-sm: 14px;
+    --font-md: 16px ;
+    --font-xl: 20px ;
+
+    --content-widht: 1280px;
 }
 
 body {
     font-family: var(--main-font);
     font-weight: normal;
     font-style: normal;
-    font-size: var(--primary-fz);
+    font-size: var(--font-md);
 }
 
 .container {
-    max-width: 1310px;
+    max-width: var(--content-widht);
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 0 15px ;
+}
+
+a {
+    font-size: var(--font-md);
+    text-decoration: none;
+    display: inline-block;
+    color: var(--basic-white);
+}
+
+.btn {
+    cursor: pointer;
+    padding: 16px 48px;
+    font-size: 18px;
+    font-weight: 700;
+    background: transparent;
+    border: 1px solid transparent;
+}
+.primary-btn {
+    background: var(--color-button-primary);
+}
+.primary-btn:hover {
+    background: var(--btn-hover-primary);
+}
+
+.accent {
+    color: var(--color-button-primary);
+}
+/*  HEADER  */
+.header {
+    background-color: var(--primary-color);
+    padding: 25px 0;
+}
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__content {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.nav__menu {
+    display: flex;
+    gap: 24px;
+    line-height: 1.75;
+}
+.header__btn {
+    background: var(--basic-white);
+}
+
+.header__btn:hover {
+    background: var(--btn-hover-secondary);
+    border-color: var(--btn-hover-secondary);
+}
+
+/*  STARTUP  */
+.startup {
+    margin-top: 53px;
+    padding: 192px 0 192px 80px;
+    background-image: url("./../assets/images/man-in-black-suit-wearing-eye-glasses.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.startup__content {
+    color: var(--basic-white);
+    max-width: 804px;
+
+}
+.startup__subtitle {
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 125%;
+    letter-spacing: 0.19em;
+    margin-bottom: 24px;
+}
+.startup__title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 114%;
+    letter-spacing: -0.04em;
+    margin-bottom: 24px;
+}
+.startup__date {
+    display: flex;
+    gap:10px;
+    margin-bottom: 24px;
+}
+.startup__speaker {
+    padding-right: 10px;
+    border-right: 1px solid var(--basic-white);
+}
+.startup__description {
+    margin-bottom: 48px;
+    line-height: 175%;
+}
+
+/* POSTS  */
+.posts {
+    margin-top: 75px;
 }
