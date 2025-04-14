@@ -1,11 +1,11 @@
 :root {
     --primary-color: #232536;
     --secondary-color: #6D6E76;
-    --accent-color: #592EA9;
+    --accent-color-purple: #592EA9;
     --color-button-primary: #FFD050;
     --btn-hover-primary: #EDC14A;
+    --light-yellow:#FBF6EA;
     --btn-hover-secondary: #d3d0d7;
-    --text-accent: #FBF6EA;
     --primary-bg: #F4F4F4;
     --bg-secondary: #F4F0F8;
     --dark-gray: #4C4C4C;
@@ -17,6 +17,9 @@
     --fomt-sm: 14px;
     --font-md: 16px ;
     --font-xl: 20px ;
+
+    --mb-lardge: 16px;
+    --mb-small: 8px;
 
     --content-widht: 1280px;
 }
@@ -40,7 +43,6 @@ a {
     display: inline-block;
     color: var(--basic-white);
 }
-
 .btn {
     cursor: pointer;
     padding: 16px 48px;
@@ -56,8 +58,19 @@ a {
     background: var(--btn-hover-primary);
 }
 
-.accent {
+/* ACCENT */
+.accent-yellow {
     color: var(--color-button-primary);
+}
+.accent-purple {
+    color: var(--accent-color-purple)
+}
+.bg-accent {
+    background-color: var(--light-yellow);
+}
+/*BORDER  */
+.border-sm {
+    border-right: 1px solid var(--dark-gray);
 }
 /*  HEADER  */
 .header {
@@ -134,5 +147,94 @@ a {
 
 /* POSTS  */
 .posts {
-    margin-top: 75px;
+    margin-top: 128px;
 }
+.posts__wrapper {
+    display: flex;
+    gap: 32px;
+    color: var(--primary-color);
+}
+.posts__featured {
+    flex: 1 1 30%;
+}
+.posts__featured-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: -0.06em;
+    margin-bottom: 32px;
+}
+.posts__featured-publication {
+    max-width: 733px;
+    padding: 32px;
+    border: 1px solid var(--secondary-color);
+}
+.posts__img {
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+.posts__author {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--dark-gray);
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+.posts__name {
+    padding-right: 10px;
+    border-right: 1px solid var(--secondary-color);
+}
+.posts__subtitle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.43;
+    letter-spacing: -0.04em;
+    margin-bottom: 16px;
+}
+.posts__description {
+    line-height: 1.75;
+    color: var(--secondary-color);
+    margin-bottom: 32px;
+}
+.posts__menu {
+    flex: 1 1 30%;
+}
+.posts__menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.posts__menu-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: -0.06em;
+}
+.posts__menu-link {
+    line-height: 1.75;
+    color: var(--accent-color-purple);
+}
+.card {
+    padding: 32px 32px 25px;
+}
+.card__author {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+.card__name {
+    padding-right: 10px;
+}
+.card__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.33;
+    max-width: 369px;
+}
+
+/* ABOUT US */
