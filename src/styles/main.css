@@ -10,6 +10,7 @@
     --bg-secondary: #F4F0F8;
     --dark-gray: #4C4C4C;
     --basic-white: #ffffff;
+    --lavender: #F4F0F8;
     --bg-gradient: radial-gradient(80.99% 71.93% at 74.58% 0%, rgba(0, 0, 0, 0) 0%, #04040482 100%);
 
     --main-font: 'Sen', sans-serif;
@@ -238,3 +239,52 @@ a {
 }
 
 /* ABOUT US */
+.aboutAs {
+    margin-top: 128px;
+    color: var(--primary-color);
+}
+.aboutAs__img {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    bottom: 0;
+}
+.aboutAs__wrapper {
+    display: flex;
+    gap: 60px;
+    background-color: var(--lavender);
+    padding: 96px 80px;
+    position: relative;
+}
+.aboutAs__info {
+    flex: 1 1 50%;
+}
+.aboutAs__subtitle {
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.19em;
+    margin-bottom: 24px;
+}
+.aboutAs__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: -0.06em;
+    max-width: 494px;
+    margin-bottom: 16px;
+}
+.aboutAs__description {
+    line-height: 1.75;
+    color: var(--dark-gray);
+    margin-bottom: 16px;
+}
+.aboutAs__link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.78;
+    color: var(--accent-color-purple);
+}
+.aboutAs__mission {
+    flex: 1 1 50%;
+}
