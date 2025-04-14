@@ -59,6 +59,12 @@ a {
 .primary-btn:hover {
     background: var(--btn-hover-primary);
 }
+.arrow-prev {
+    background-color: var(--basic-white);
+}
+.arrow-next {
+    background-color: var(--primary-color);
+}
 
 /* ACCENT */
 .accent-yellow {
@@ -426,4 +432,110 @@ a {
     justify-content: center;
     align-items: center;
     gap: 16px;
+}
+
+/* PARTNERS */
+.partners{
+    margin-top: 128px;
+}
+
+.partners__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.partners__link {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* FEEDBACK */
+.feedback {
+    margin-top: 128px;
+}
+.feedback__wrapper {
+    background-color: var(--light-yellow);
+    padding: 92px 112px 75px;
+    display: flex;
+    justify-content: space-between;
+}
+.feedback__intro {
+    max-width: 350px;
+    padding-right: 80px;
+}
+.feedback__label {
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.19em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.feedback__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: -0.06em;
+    margin-bottom: 16px;
+}
+.feedback__description {
+    line-height: 1.75;
+}
+.feedback__content {
+    padding-left: 80px;
+    border-left: 1px solid var(--secondary-color);
+}
+.feedback__quote {
+    max-width: 469px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.33;
+    margin-bottom: 121px;
+}
+.feedback__author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feedback__author-info{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.feedback__author-description {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.33;
+}
+.feedback__address {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--secondary-color);
+}
+.feedback__controls {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.feedback__arrow {
+    border: none;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+.feedback__arrow:hover {
+    transform: scale(1.3);
+
 }
