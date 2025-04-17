@@ -8,6 +8,7 @@
     --purple-color: #592EA9;
     --light-purpule-color: #F4F0F8;
     --purple-light-hover: #c7bfd2;
+    --hover-link-purpule-light: #cab8ec;
     --yellow-color: #ffd050;
     --yellov-hover: #d3ac43;
     --light-yellow-color:#FBF6EA;
@@ -63,6 +64,7 @@ a {
 }
 .primary-btn {
     background: var(--yellow-color);
+    transition: background 0.3s linear;
 }
 .primary-btn:hover {
     background: var(--yellov-hover);
@@ -81,7 +83,7 @@ a {
 .accent-purple {
     color: var(--purple-color)
 }
-.bg-accent {
+.bg-accent-light-yellow {
     background-color: var(--light-yellow-color);
 }
 .bg-medium-gray {
@@ -116,8 +118,15 @@ a {
     gap: 24px;
     line-height: var(--lineHeight-xl);
 }
+.nav__link {
+    transition: color 0.3s ease;
+}
+.nav__link:hover {
+    color: var(--hover-link-purpule-light);
+}
 .header__btn {
     background: var( --primary-white);
+    transition: all 0.3s linear;
 }
 .header__btn:hover {
     background: var(--purple-light-hover);
@@ -126,18 +135,17 @@ a {
 
 /*  STARTUP  */
 .startup {
-    padding: 192px 80px;
     background-image:
     var(--banner-gradient),
     url("./../assets/images/man-in-black-suit-wearing-eye-glasses.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 192px 80px;
 }
-
 .startup__content {
     max-width: 804px;
-    color: var( --primary-white);
+    color: var(--primary-white);
 }
 .startup__subtitle {
     font-weight: var(--fontWeidth-sm);
@@ -155,7 +163,7 @@ a {
 }
 .startup__date {
     display: flex;
-    gap:10px;
+    gap: 10px;
     margin-bottom: 24px;
 }
 .startup__speaker {
@@ -177,7 +185,7 @@ a {
     color: var(--primary-black-color);
 }
 .posts__featured {
-    flex: 1 1 30%;
+    flex: 1 1 50%;
 }
 .posts__featured-title {
     font-weight: var(--fontWeidth-xl);
@@ -221,7 +229,7 @@ a {
     margin-bottom: 32px;
 }
 .posts__menu {
-    flex: 1 1 30%;
+    flex: 1 1 50%;
 }
 .posts__menu-header {
     display: flex;
@@ -238,6 +246,13 @@ a {
 .posts__menu-link {
     line-height: var(--lineHeight-xl);
     color: var(--purple-color);
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+}
+.posts__menu-link:hover {
+    background-color: var(--light-grey-color);
+    border-radius: 20px;
 }
 .card {
     padding: 32px 32px 25px;
@@ -271,11 +286,13 @@ a {
     bottom: 0;
 }
 .aboutAs__wrapper {
-    display: flex;
-    gap: 60px;
     background-color: var(--light-purpule-color);
     padding: 96px 80px;
+}
+.aboutAs__body {
     position: relative;
+    display: flex;
+    gap: 60px;
 }
 .aboutAs__info {
     flex: 1 1 50%;
@@ -305,6 +322,13 @@ a {
     font-size: 18px;
     line-height: var(--lineHeight-xl);
     color: var(--purple-color);
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+}
+.aboutAs__link:hover {
+    background-color: var(--primary-white);
+    border-radius: 20px;
 }
 .aboutAs__mission {
     flex: 1 1 50%;
@@ -420,7 +444,6 @@ a {
 }
 .author__about {
     margin-bottom: 20px;
-
 }
 .author__title {
     font-weight: var(--fontWeidth-xl);
@@ -435,18 +458,26 @@ a {
     text-align: center;
     color: var(--dark-grey-color);
 }
-.author__social {
+.author__social-menu {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
+}
+.icon-author {
+    width: 16px;
+    height: 16px;
+    fill: var(--primary-black-color);
+    transition: transform 0.3s ease;
+}
+.icon-author:hover {
+    transform: scale(1.3);
 }
 
 /* PARTNERS */
 .partners{
     margin-top: 128px;
 }
-
 .partners__list {
     display: flex;
     justify-content: space-between;
@@ -456,7 +487,6 @@ a {
     font-size: var(--font-xl);
     line-height: var(--lineHeight-md);
 }
-
 .partners__link {
     color: var(--secondary-gray-color);
     font-weight: var(--fontWeidth-xl);
@@ -474,12 +504,13 @@ a {
 .feedback__wrapper {
     background-color: var(--light-yellow-color);
     padding: 92px 112px 75px;
+}
+.feedback__body {
     display: flex;
     justify-content: space-between;
 }
 .feedback__intro {
     max-width: 350px;
-    padding-right: 80px;
 }
 .feedback__label {
     font-weight: var(--fontWeidth-md);
@@ -503,7 +534,7 @@ a {
     border-left: 1px solid var(--secondary-gray-color);
 }
 .feedback__quote {
-    max-width: 469px;
+    max-width: 470px;
     font-weight: var(--fontWeidth-xl);
     font-size: var(--font-xl);
     line-height: var(--lineHeight-md);

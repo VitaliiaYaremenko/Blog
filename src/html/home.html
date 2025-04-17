@@ -15,7 +15,7 @@
         <div class="header__wrapper">
             <div class="header__logo">
                 <a class="header__logo-link" href="#">
-                    <img src="./../assets/images/svg/logo.svg" alt="Finsweet" width="140px" height="30px">
+                    <img src="./../assets/images/svg/logo.svg" alt="Fin-sweet" width="140px" height="30px">
                 </a>
             </div>
             <div class="header__content">
@@ -55,7 +55,7 @@
                 <p class="startup__description">
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
                 </p>
-                <button type="button" class="btn primary-btn">Read More ></button>
+                <button type="button" class="btn primary-btn startup__btn">Read More ></button>
             </div>
         </div>
     </section>
@@ -74,7 +74,7 @@
                             <h3 class="posts__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h3>
                             <p class="posts__description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                         </div>
-                        <button type="button" class="btn primary-btn">Read More ></button>
+                        <button type="button" class="btn primary-btn posts__btn">Read More ></button>
                     </div>
                 </div>
                 <div class="posts__menu">
@@ -90,7 +90,7 @@
                             </div>
                             <h3 class="card__title">8 Figma design systems that you can download for free today.</h3>
                         </article>
-                        <article class="card bg-accent">
+                        <article class="card bg-accent-light-yellow">
                             <div class="card__author">
                                 <p class="card__name">By <span class="accent-purple">John Doe</span></p>
                                 <time class="card__date" datetime="2022-05-23">May 23, 2022</time>
@@ -120,19 +120,21 @@
         <div class="container">
             <div class="aboutAs__wrapper">
                 <img class="aboutAs__img" src="./../assets/images/svg/pattern.svg" alt="pattern">
-                <div class="aboutAs__info">
-                    <div class="aboutAs__content">
-                        <h3 class="aboutAs__subtitle">about us</h3>
-                        <h2 class="aboutAs__title">We are a community of content writers who share their learnings</h2>
-                        <p class="aboutAs__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a class="aboutAs__link" href="#">Read More ></a>
+                <div class="aboutAs__body">
+                    <div class="aboutAs__info">
+                        <div class="aboutAs__content">
+                            <h3 class="aboutAs__subtitle">about us</h3>
+                            <h2 class="aboutAs__title">We are a community of content writers who share their learnings</h2>
+                            <p class="aboutAs__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a class="aboutAs__link" href="#">Read More ></a>
+                        </div>
                     </div>
-                </div>
-                <div class="aboutAs__mission">
-                    <div class="aboutAs__content">
-                        <h3 class="aboutAs__subtitle">Our mission</h3>
-                        <h2 class="aboutAs__title">Creating valuable content for creatives all around the world</h2>
-                        <p class="aboutAs__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="aboutAs__mission">
+                        <div class="aboutAs__content">
+                            <h3 class="aboutAs__subtitle">Our mission</h3>
+                            <h2 class="aboutAs__title">Creating valuable content for creatives all around the world</h2>
+                            <p class="aboutAs__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -209,20 +211,36 @@
                         <h3 class="author__title">Floyd-Miles</h3>
                         <p class="author__info">Content Writer @Company</p>
                     </div>
-                    <div class="author__social">
-                        <div class="author__facebook">
-                            <img src="./../assets/images/svg/facebook.svg" alt="facebook">
-                        </div>
-                        <div class="author__twitter">
-                            <img src="./../assets/images/svg/twitter.svg" alt="twitter">
-                        </div>
-                        <div class="author__instagram">
-                            <img src="./../assets/images/svg/instagram.svg" alt="instagram">
-                        </div>
-                        <div class="author__LinkedIn">
-                            <img src="./../assets/images/svg/LinkedIn.svg" alt="LinkedIn">
-                        </div>
-                    </div>
+                    <ul class="author__social-menu">
+                        <li class="author__social-item">
+                            <a class="author__social-link" href="#">
+                                <svg class="icon-author">
+                                    <use xlink:href="./../assets/images/svg/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="author__social-item">
+                            <a class="author__social-link" href="#">
+                                <svg class="icon-author">
+                                    <use xlink:href="./../assets/images/svg/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="author__social-item">
+                            <a class="author__social-link" href="#">
+                                <svg class="icon-author">
+                                    <use xlink:href="./../assets/images/svg/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="author__social-item">
+                            <a class="author__social-link" href="#">
+                                <svg class="icon-author">
+                                    <use xlink:href="./../assets/images/svg/sprite.svg#linkedIn"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </article>
                 <article class="author bg-accent">
                     <div class="author__photo">
@@ -232,20 +250,36 @@
                         <h3 class="author__title">Dianne Russell</h3>
                         <p class="author__info">Content Writer @Company</p>
                     </div>
-                    <div class="author__social">
-                        <div class="author__facebook">
-                            <img src="./../assets/images/svg/facebook.svg" alt="facebook">
-                        </div>
-                        <div class="author__twitter">
-                            <img src="./../assets/images/svg/twitter.svg" alt="twitter">
-                        </div>
-                        <div class="author__instagram">
-                            <img src="./../assets/images/svg/instagram.svg" alt="instagram">
-                        </div>
-                        <div class="author__LinkedIn">
-                            <img src="./../assets/images/svg/LinkedIn.svg" alt="LinkedIn">
-                        </div>
-                    </div>
+                    <ul class="author__social-menu">
+                        <li class="author__social-item">
+                            <a class="author__social-link" href="#">
+                                <svg class="icon-author">
+                                    <use xlink:href="./../assets/images/svg/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="author__social-item">
+                            <a class="author__social-link" href="#">
+                                <svg class="icon-author">
+                                    <use xlink:href="./../assets/images/svg/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="author__social-item">
+                            <a class="author__social-link" href="#">
+                                <svg class="icon-author">
+                                    <use xlink:href="./../assets/images/svg/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="author__social-item">
+                            <a class="author__social-link" href="#">
+                                <svg class="icon-author">
+                                    <use xlink:href="./../assets/images/svg/sprite.svg#linkedIn"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </article>
                 <article class="author bg-medium-gray">
                     <div class="author__photo">
@@ -255,20 +289,36 @@
                         <h3 class="author__title">Jenny Wilson</h3>
                         <p class="author__info">Content Writer @Company</p>
                     </div>
-                    <div class="author__social">
-                        <div class="author__facebook">
-                            <img src="./../assets/images/svg/facebook.svg" alt="facebook">
-                        </div>
-                        <div class="author__twitter">
-                            <img src="./../assets/images/svg/twitter.svg" alt="twitter">
-                        </div>
-                        <div class="author__instagram">
-                            <img src="./../assets/images/svg/instagram.svg" alt="instagram">
-                        </div>
-                        <div class="author__LinkedIn">
-                            <img src="./../assets/images/svg/LinkedIn.svg" alt="LinkedIn">
-                        </div>
-                    </div>
+                    <ul class="author__social-menu">
+                        <li class="author__social-item">
+                            <a class="author__social-link" href="#">
+                                <svg class="icon-author">
+                                    <use xlink:href="./../assets/images/svg/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="author__social-item">
+                            <a class="author__social-link" href="#">
+                                <svg class="icon-author">
+                                    <use xlink:href="./../assets/images/svg/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="author__social-item">
+                            <a class="author__social-link" href="#">
+                                <svg class="icon-author">
+                                    <use xlink:href="./../assets/images/svg/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="author__social-item">
+                            <a class="author__social-link" href="#">
+                                <svg class="icon-author">
+                                    <use xlink:href="./../assets/images/svg/sprite.svg#linkedIn"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </article>
                 <article class="author bg-medium-gray">
                     <div class="author__photo">
@@ -278,20 +328,36 @@
                         <h3 class="author__title">Leslie Alexander</h3>
                         <p class="author__info">Content Writer @Company</p>
                     </div>
-                    <div class="author__social">
-                        <div class="author__facebook">
-                            <img src="./../assets/images/svg/facebook.svg" alt="facebook">
-                        </div>
-                        <div class="author__twitter">
-                            <img src="./../assets/images/svg/twitter.svg" alt="twitter">
-                        </div>
-                        <div class="author__instagram">
-                            <img src="./../assets/images/svg/instagram.svg" alt="instagram">
-                        </div>
-                        <div class="author__LinkedIn">
-                            <img src="./../assets/images/svg/LinkedIn.svg" alt="LinkedIn">
-                        </div>
-                    </div>
+                    <ul class="author__social-menu">
+                        <li class="author__social-item">
+                            <a class="author__social-link" href="#">
+                                <svg class="icon-author">
+                                    <use xlink:href="./../assets/images/svg/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="author__social-item">
+                            <a class="author__social-link" href="#">
+                                <svg class="icon-author">
+                                    <use xlink:href="./../assets/images/svg/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="author__social-item">
+                            <a class="author__social-link" href="#">
+                                <svg class="icon-author">
+                                    <use xlink:href="./../assets/images/svg/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="author__social-item">
+                            <a class="author__social-link" href="#">
+                                <svg class="icon-author">
+                                    <use xlink:href="./../assets/images/svg/sprite.svg#linkedIn"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </article>
             </div>
         </div>
@@ -338,27 +404,29 @@
     <section class="feedback">
         <div class="container">
             <div class="feedback__wrapper">
-                <div class="feedback__intro">
-                    <p class="feedback__label">testimonials</p>
-                    <h2 class="feedback__title">What people say about our blog</h2>
-                    <p class="feedback__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
-                <div class="feedback__content">
-                    <p class="feedback__quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="feedback__author">
-                        <div class="feedback__author-info">
-                            <img src="./../assets/images/Jonathan-Vallem.png" alt="Jonathan-Vallem">
-                            <div class="feedback__author-about">
-                                <p class="feedback__author-description">Jonathan Vallem <br> <span class="feedback__address">New york, USA</span> </p>
+                <div class="feedback__body">
+                    <div class="feedback__intro">
+                        <p class="feedback__label">testimonials</p>
+                        <h2 class="feedback__title">What people say about our blog</h2>
+                        <p class="feedback__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    <div class="feedback__content">
+                        <p class="feedback__quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="feedback__author">
+                            <div class="feedback__author-info">
+                                <img src="./../assets/images/Jonathan-Vallem.png" alt="Jonathan-Vallem">
+                                <div class="feedback__author-about">
+                                    <p class="feedback__author-description">Jonathan Vallem <br> <span class="feedback__address">New york, USA</span> </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="feedback__controls">
-                            <button class="feedback__arrow arrow-prev">
-                                <img src="./../assets/images/svg/arrow-left.svg" alt="arrow-left">
-                            </button>
-                            <button class="feedback__arrow arrow-next">
-                                <img src="./../assets/images/svg/arrow-right.svg" alt="arrow-right">
-                            </button>
+                            <div class="feedback__controls">
+                                <button class="feedback__arrow arrow-prev">
+                                    <img src="./../assets/images/svg/arrow-left.svg" alt="arrow-left">
+                                </button>
+                                <button class="feedback__arrow arrow-next">
+                                    <img src="./../assets/images/svg/arrow-right.svg" alt="arrow-right">
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -405,7 +473,7 @@
                 </nav>
             </div>
             <div class="footer__subscribe">
-                <h2 class="footer__subscribe-title">Subscribe to our news letter to get latest updates and news</h2>
+                <h2 class="footer__subscribe-title">Subscribe to our newsletter to get latest updates and news</h2>
                 <form class="footer__form">
                     <input class="footer__input" type="email" placeholder="Enter Your Email">
                     <button type="button" class="btn primary-btn">Subscribe</button>
